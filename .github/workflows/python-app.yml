@@ -33,7 +33,7 @@ jobs:
         pyinstaller --onefile python_installer.py
         
     - name: Upload artifacts
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: python-installer-${{ runner.os }}
         path: |
